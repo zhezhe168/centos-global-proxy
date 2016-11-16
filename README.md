@@ -11,6 +11,8 @@ forward-socks5 / 127.0.0.1:          端口换为1080
 
 
 此处即将SS的socks5流量前接了一个privoxy代理，而prixovy允许各种协议流量通过，包括HTTP、HTTPS、FTP、SOCKS等。
+systemctl restart privoxy.service 
+
 -------
 
 export http_proxy=http://127.0.0.1:8118
